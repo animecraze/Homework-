@@ -1,13 +1,15 @@
-function cm_to_m (lengthcm : real) : real
-    var metre : real
-    metre := lengthcm / 100
-    result metre
-end cm_to_m
+function circleArea (radius : real ) : real
+      var area : real
+    area :=  3.14*radius**2
+ result area
+end circleArea
 
-%main program
+% main program
 
-var cm : real 
+var r : real
 
-put "Please enter a length in cm : " ..
-get cm
-put "The length in metres is ", cm_to_m(cm), "m."
+put "Please enter a value for the radius : " ..
+get r
+
+put "The area of the circle is ", circleArea(r) ,"."
+
